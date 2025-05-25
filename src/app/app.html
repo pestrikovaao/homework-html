@@ -1,1 +1,173 @@
-<h1>Creating the Future...</h1>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="generator" content="GitLab Pages">
+    <title>Plain HTML site using GitLab Pages</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+            href="https://unpkg.com/flowbite@1.10.1/dist/flowbite.min.css"
+            rel="stylesheet"
+    />
+    <link rel="stylesheet" href="app.css">
+</head>
+    <body class="min-h-screen flex flex-col">
+    <div class="w-4/5 mx-auto flex flex-col flex-grow">
+        <header class="bg-white pt-4 pb-8 px-4">
+            <div class="mx-auto w-full flex items-center justify-between">
+                <img src="../img/mslogo.png" alt="logo" class="h-12" />
+                <button
+                        type="button"
+                        data-modal-target="addDataModal"
+                        data-modal-toggle="addDataModal"
+                        class="flex items-center text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5"
+                >
+                    <img src="../img/file_icon_wh.png" alt="icon" class="w-4 h-4 mr-2 inline-block" />
+                    Add Data
+                </button>
+            </div>
+        </header>
+        <main class="flex-grow px-4">
+            <div class="relative overflow-x-auto mx-auto w-full">
+                <table class="w-full text-left text-gray-700">
+                    <thead class="text-gray-500 uppercase bg-gray-50">
+                    <tr>
+                        <th class="px-6 py-3">Transaction</th>
+                        <th class="px-6 py-3">Date & Time</th>
+                        <th class="px-6 py-3">Amount</th>
+                        <th class="px-6 py-3">Status</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr class="border-b">
+                        <td class="px-6 py-4">Payment from <strong>Bonnie Green</strong></td>
+                        <td class="px-6 py-4">Apr 23, 2021</td>
+                        <td class="px-6 py-4">$2300</td>
+                        <td class="px-6 py-4"><span class="bg-green-100 text-green-800 text-xs font-medium px-2 py-1 rounded">Completed</span></td>
+                    </tr>
+                    <tr class="border-b">
+                        <td class="px-6 py-4">Payment refund to <strong>#00910</strong></td>
+                        <td class="px-6 py-4">Apr 23, 2021</td>
+                        <td class="px-6 py-4">-$670</td>
+                        <td class="px-6 py-4"><span class="bg-green-100 text-green-800 text-xs font-medium px-2 py-1 rounded">Completed</span></td>
+                    </tr>
+                    <tr class="border-b">
+                        <td class="px-6 py-4">Payment failed from <strong>#087651</strong></td>
+                        <td class="px-6 py-4">Apr 18, 2021</td>
+                        <td class="px-6 py-4">$234</td>
+                        <td class="px-6 py-4"><span class="bg-red-100 text-red-800 text-xs font-medium px-2 py-1 rounded">Cancelled</span></td>
+                    </tr>
+                    <tr class="border-b">
+                        <td class="px-6 py-4">Payment from <strong>Lana Byrd</strong></td>
+                        <td class="px-6 py-4">Apr 15, 2021</td>
+                        <td class="px-6 py-4">$5000</td>
+                        <td class="px-6 py-4"><span class="bg-purple-100 text-purple-800 text-xs font-medium px-2 py-1 rounded">In progress</span></td>
+                    </tr>
+                    <tr class="border-b">
+                        <td class="px-6 py-4">Payment from <strong>Jese Leos</strong></td>
+                        <td class="px-6 py-4">Apr 15, 2021</td>
+                        <td class="px-6 py-4">$2300</td>
+                        <td class="px-6 py-4"><span class="bg-green-100 text-green-800 text-xs font-medium px-2 py-1 rounded">Completed</span></td>
+                    </tr>
+                    <tr>
+                        <td class="px-6 py-4">Payment from <strong>THEMSBERG LLC</strong></td>
+                        <td class="px-6 py-4">Apr 11, 2021</td>
+                        <td class="px-6 py-4">$560</td>
+                        <td class="px-6 py-4"><span class="bg-green-100 text-green-800 text-xs font-medium px-2 py-1 rounded">Completed</span></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+        <footer class="py-4 px-4">
+            <div class="mx-auto w-full text-center">
+                <p class="text-sm text-gray-500">© 2007-2024 ООО «Логнекс»</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Разметка модального окна -->
+    <div
+            id="addDataModal"
+            aria-hidden="true"
+            class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full"
+    >
+        <div class="relative w-full max-w-md mx-auto mt-20">
+            <div class="bg-white rounded-lg shadow-lg dark:bg-gray-700">
+                <button
+                        type="button"
+                        class="absolute top-3 right-3 p-1.5 bg-transparent hover:bg-gray-200 rounded-lg"
+                        data-modal-hide="addDataModal"
+                >
+                    <img src="../img/close.png" alt="Close" class="w-5 h-5"/>
+                    <span class="sr-only">Close modal</span>
+                </button>
+                <div class="p-6">
+                    <h3 class="mb-6 text-xl font-semibold text-gray-900 dark:text-white">
+                        Sign in to our platform
+                    </h3>
+                    <form>
+                        <div class="mb-4">
+                            <label for="email" class="block mb-2 text-sm font-medium text-gray-700 dark:text-gray-300">
+                                Your email
+                            </label>
+                            <input
+                                    id="email"
+                                    type="email"
+                                    placeholder="name@flowbite.com"
+                                    class="block w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+                            />
+                        </div>
+
+                        <div class="mb-4">
+                            <label for="password" class="block mb-2 text-sm font-medium text-gray-700 dark:text-gray-300">
+                                Password
+                            </label>
+                            <input
+                                    id="password"
+                                    type="password"
+                                    placeholder="••••••••"
+                                    class="block w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+                            />
+                        </div>
+
+                        <div class="flex items-center justify-between mb-6">
+                            <div class="flex items-center">
+                                <input
+                                        id="remember"
+                                        type="checkbox"
+                                        class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded dark:bg-gray-600 dark:border-gray-500"
+                                />
+                                <label for="remember" class="ml-2 text-sm text-gray-900 dark:text-gray-300">
+                                    Remember me
+                                </label>
+                            </div>
+                            <a href="#"
+                               class="text-sm font-medium text-blue-600 hover:underline dark:text-blue-500">
+                                Lost Password?
+                            </a>
+                        </div>
+
+                        <button
+                                type="submit"
+                                class="w-full px-4 py-2 text-white bg-blue-600 rounded-lg font-medium hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        >
+                            Create account
+                        </button>
+                    </form>
+
+                    <p class="mt-6 text-sm text-gray-500 dark:text-gray-400">
+                        Not registered?
+                        <a href="#" class="font-medium text-blue-600 hover:underline dark:text-blue-500">
+                            Create account
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+    </body>
+</html>
