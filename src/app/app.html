@@ -1,50 +1,26 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="utf-8">
-    <meta name="generator" content="GitLab Pages">
-    <title>МойСклад</title>
+<div class="w-4/5 mx-auto flex flex-col min-h-screen">
+    <header class="bg-white pt-4 pb-8 px-4">
+        <div class="mx-auto w-full flex items-center justify-between">
+            <img src="../img/mslogo.png" alt="logo" class="h-12" />
+            <button
+                    id="addBtn"
+                    class="text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5"
+            >
+                Добавить
+            </button>
+        </div>
+    </header>
 
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link
-            href="https://unpkg.com/flowbite@1.10.1/dist/flowbite.min.css"
-            rel="stylesheet"
-    />
+    <main class="flex-grow px-4 py-4 bg-white">
+        <div id="modal-root"></div>
+        <div id="table-root"></div>
+    </main>
 
-    <link rel="stylesheet" href="./app.css" />
-    <link rel="stylesheet" href="./contragents/modal/modal.css" />
-    <link rel="stylesheet" href="./contragents/table/table.css" />
-</head>
-<body class="min-h-screen flex flex-col bg-white">
+    <footer class="py-4 px-4 bg-white">
+        <div class="mx-auto w-full text-center">
+            <p class="text-sm text-gray-500">© 2007-2024 ООО «Логнекс»</p>
+        </div>
+    </footer>
 
-    <div class="w-4/5 mx-auto flex flex-col flex-grow">
-        <header class="bg-white pt-4 pb-8 px-4">
-            <div class="mx-auto w-full flex items-center justify-between">
-                <img src="../img/mslogo.png" alt="logo" class="h-12" />
-                <button
-                        id="addBtn"
-                        class="text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5"
-                >
-                    Добавить
-                </button>
-            </div>
-        </header>
+</div>
 
-        <main class="flex-grow px-4 py-4 bg-white">
-            <div id="table-root"></div>
-        </main>
-
-        <footer class="py-4 px-4 bg-white">
-            <div class="mx-auto w-full text-center">
-                <p class="text-sm text-gray-500">© 2007-2024 ООО «Логнекс»</p>
-            </div>
-        </footer>
-
-    </div>
-
-    <div id="modal-root"></div>
-
-    <script type="module" src="./app.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
-</body>
-</html>
