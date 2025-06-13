@@ -40,7 +40,6 @@ module.exports = {
       {
         test: /\.(png|jpe?g|gif|svg)$/i,
         type: "asset/resource"
-        // т.к. мы задали assetModuleFilename в output, здесь никаких опций не нужно
       }
     ]
   },
