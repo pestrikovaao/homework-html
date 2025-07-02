@@ -54,7 +54,7 @@ const AgentModal: FC<AgentModalProps> = ({ isOpen, agent, index, onSave, onClose
 
   return (
     <>
-      <div className="fixed inset-0 bg-black opacity-30" onClick={onClose} />
+      <div className="fixed inset-0 bg-black" onClick={onClose} />
       <div
         id="agentModal"
         className="fixed inset-x-0 top-20 mx-auto w-full max-w-md z-50"

@@ -1,4 +1,3 @@
-// src/contexts/AgentsContext.tsx
 import React, {
   createContext, useState, useEffect, FC, ReactNode
 } from 'react';
@@ -25,7 +24,7 @@ export const AgentsContext = createContext<AgentsContextType>({
 export const AgentsProvider: FC<{children: ReactNode}> = ({ children }) => {
   const [agents, setAgents] = useState<Agent[]>([]);
   const [loading, setLoading] = useState(true);
-  const apiUrl = '/agents'; // прокси в package.json
+  const apiUrl = 'http://localhost:3001/agents';
 
   const reload = async () => {
     setLoading(true);
