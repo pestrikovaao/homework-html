@@ -108,11 +108,11 @@ const App: FC = () => {
 
       <footer className="py-4 px-4 bg-white">
         <p className="text-sm text-gray-500 text-center">
-          © 2007-2024 ООО «Логнекс"
+          © 2007-2024 ООО «Логнекс»
         </p>
       </footer>
     </div>
   );
-};
+}
 
 export default App;
