@@ -37,9 +37,11 @@
     "webpack-dev-server": "^5.0.4"
   },
   "dependencies": {
+    "final-form": "^5.0.0",
     "flowbite": "^2.3.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
+    "react-final-form": "^7.0.0",
     "react-router-dom": "^7.6.2"
   }
 }
